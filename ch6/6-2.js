@@ -18,3 +18,8 @@ function gatherCustomerData(out, customer) {
   out.push(['name', customer.name]);
   out.push(['location', customer.location]);
 }
+
+/*
+<함수인라인>
+1. 이건 불필요하게 함수를 뽑은것같은데 굳이 함수로 추출할필요없겠는데?
+*/
