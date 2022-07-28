@@ -8,3 +8,7 @@ export function baseRate(month, year) {
   if (year === 2017 && month === 5) return 0.1;
   return 0.2;
 }
+
+/*
+<여러 함수를 (변환함수!!)로 묶어보자!!>
+*/
