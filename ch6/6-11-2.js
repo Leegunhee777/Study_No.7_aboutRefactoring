@@ -24,6 +24,4 @@ nodemon ch6/6-11-2.js ch6/orders 라고하면 process.argv[2]는 ch6/orders를 �
 nodemon ch6/6-11-2.js ch6/orders -r 이라 입력하면
 process.argv.includes('-r')조건문에 들어가게할수있음
 
-
-
 */
