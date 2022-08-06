@@ -10,12 +10,12 @@ class Person {
     return this.#name;
   }
 
-  get department() {
-    return this.#department;
+  get manager() {
+    return this.#department.manager;
   }
 
-  set department(arg) {
-    this.#department = arg;
+  get chargeCode() {
+    return this.#department.chargeCode;
   }
 }
 
@@ -46,24 +46,5 @@ export class Department {
 
 const person = new Person('Tom', new Department('aManager', '999'));
 console.log(person.name);
-console.log(person.department.manager);
-console.log(person.department.chargeCode);
-
-/*
-<위임 숨기기>
-
-Person 클래스에서 Department인스턴스를 받아 사용하고있는데,
-console.log(person.department.manager);
-console.log(person.department.chargeCode);
-이런식으로 department인스턴스를 외부에 직접적으로 노출시키는 것은 좋지않다
-
-//아래와같은방식보다
-console.log(person.name);
-console.log(person.department.manager);
-console.log(person.department.chargeCode);
-
-//아래의 방직으로 사용할수있게 만드는것이 더 좋다.
-console.log(person.name);
 console.log(person.manager);
 console.log(person.chargeCode);
-*/
