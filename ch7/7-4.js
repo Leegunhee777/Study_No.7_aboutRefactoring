@@ -13,3 +13,7 @@ class Order {
     return basePrice * discountFactor;
   }
 }
+
+/*
+<임시 변수를 질의 함수로 바꾸기>
+*/

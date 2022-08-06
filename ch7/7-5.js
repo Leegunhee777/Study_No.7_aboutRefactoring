@@ -42,3 +42,8 @@ console.log(person.name);
 console.log(person.officeAreaCode);
 console.log(person.officeNumber);
 console.log(person.telephoneNumber);
+
+/*
+<클래스 추출하기>
+클래스 하나당 하나의 역할, 하나의 책임, 하나의 도메인을 가지고있는것이좋다.
+*/
