@@ -17,3 +17,7 @@ console.log(foundPerson(['John']));
 console.log(foundPerson(['Don', 'John']));
 console.log(foundPerson(['Kent', 'Don', 'John']));
 console.log(foundPerson(['Lisa', 'Don', 'Tom']));
+
+/*
+<알고리즘 교체하기>
+*/

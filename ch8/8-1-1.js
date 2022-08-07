@@ -51,3 +51,11 @@ const tokyo = {
 
 const summary = trackSummary([newYork, tokyo]);
 console.log(summary);
+
+/*
+<함수 옮기기, 함수 응집도 높이기>
+응집도가 중요함
+distance함수는 trackSummary의 내부함수로 존재할이유가 없다! (trackSummary의 메인data와!!! 밀접하게 관계가 없기떄문)
+필요한 유틸리티!!!는 분리하는게 맞다.
+분리해라(다른곳에서 사용할수 있는 재사용성의 측면에서도 좋다)
+*/
