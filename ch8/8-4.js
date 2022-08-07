@@ -6,8 +6,8 @@ function renderPerson(outStream, person) {
 
 function listRecentPhotos(outStream, photos) {
   photos
-    .filter((p) => p.date > recentDateCutoff())
-    .forEach((p) => {
+    .filter(p => p.date > recentDateCutoff())
+    .forEach(p => {
       outStream.write('<div>\n');
       emitPhotoData(outStream, p);
       outStream.write('</div>\n');

@@ -7,10 +7,13 @@ export function renderPerson(person) {
   return result.join('\n');
 }
 
-export function photoDiv(p) {
-  return ['<div>', `<p>title: ${p.title}</p>`, emitPhotoData(p), '</div>'].join(
-    '\n'
-  );
+export function photoDiv(photo) {
+  return [
+    '<div>',
+    `<p>title: ${photo.title}</p>`,
+    emitPhotoData(photo),
+    '</div>',
+  ].join('\n');
 }
 
 function emitPhotoData(aPhoto) {
