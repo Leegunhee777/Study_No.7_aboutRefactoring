@@ -24,3 +24,7 @@ Porto Alegre, Brazil, +55 51 3079 3550\n
 Chennai, India, +91 44 660 44766`;
 const result = acquireData(input);
 console.log(result);
+
+/*
+<반복문을 파이프라인으로 바꾸기>
+*/
