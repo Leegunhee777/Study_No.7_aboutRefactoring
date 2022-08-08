@@ -27,3 +27,8 @@ function discount(inputValue, quantity) {
   if (quantity > 100) inputValue = inputValue - 1;
   return inputValue;
 }
+
+/*
+<변수 쪼개기>
+임시변수를 쓰지말고 의미있는 이름을 부여하자!!
+*/
