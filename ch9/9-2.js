@@ -20,3 +20,7 @@ const organization = new Organization({
   name: '드림코딩',
   country: '대한민국',
 });
+
+/*
+<필드이름바꾸기>
+*/
