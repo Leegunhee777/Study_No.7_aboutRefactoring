@@ -4,3 +4,7 @@ function disabilityAmount(employee) {
   if (employee.isPartTime) return 0;
   return 1;
 }
+
+/*
+<조건식 통합하기>
+*/
