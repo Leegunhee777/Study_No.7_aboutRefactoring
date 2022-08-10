@@ -5,3 +5,7 @@ function calculateCharge(date, quantity, plan) {
   else charge = quantity * plan.regularRate + plan.regularServiceCharge;
   return charge;
 }
+
+/*
+<조건문 분해하기>
+*/
