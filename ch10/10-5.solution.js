@@ -4,7 +4,15 @@ export class Site {
   }
 
   get customer() {
-    return this._customer;
+    return this._customer === 'unknown'
+      ? new UnknownCustomer()
+      : new Customer(this._customer);
+  }
+}
+
+class UnknownCustomer extends Customer {
+  get name() {
+    return 'occupant';
   }
 }
 
@@ -35,13 +43,7 @@ export function customerName(site) {
   const aCustomer = site.customer;
   // 더 많은 코드가 여기에 있음
   let customerName;
-  if (aCustomer === 'unknown') customerName = 'occupant';
-  else customerName = aCustomer.name;
+  customerName = aCustomer.name;
 
   return customerName;
 }
-
-/*
-<특이 케이스 추가하기>
-solution의 UnknownCustomer 클래스를 말함
-*/
