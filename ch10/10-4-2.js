@@ -20,14 +20,14 @@ function captainHistoryRisk(voyage, history) {
   // 선장의 항해 이력 위험 요소
   let result = 1;
   if (history.length < 5) result += 4;
-  result += history.filter((v) => v.profit < 0).length;
+  result += history.filter(v => v.profit < 0).length;
   if (voyage.zone === 'china' && hasChina(history)) result -= 2;
   return Math.max(result, 0);
 }
 
 function hasChina(history) {
   // 중국을 경유하는가?
-  return history.some((v) => 'china' === v.zone);
+  return history.some(v => 'china' === v.zone);
 }
 
 function voyageProfitFactor(voyage, history) {
@@ -57,3 +57,6 @@ const history = [
 
 const rate = rating(voyage, history);
 console.log(rate);
+/*
+  조건부 로직을 다형성으로 바꾸기
+*/
