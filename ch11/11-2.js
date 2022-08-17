@@ -34,3 +34,6 @@ function usd(value) {
     value: value,
   };
 }
+/*
+<함수 매개변수화 하기>
+*/
