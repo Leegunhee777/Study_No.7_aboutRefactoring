@@ -7,3 +7,6 @@ class Salesperson extends Employee {
 class Engineer extends Employee {
   #name;
 }
+/*
+<필드 올리기>
+*/
