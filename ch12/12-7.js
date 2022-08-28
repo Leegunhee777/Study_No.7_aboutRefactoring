@@ -27,7 +27,7 @@ class Female extends Person {
 
 function loadFromInput(data) {
   const result = [];
-  data.forEach((record) => {
+  data.forEach(record => {
     let person;
     switch (record.gender) {
       case 'M':
@@ -49,5 +49,9 @@ const people = loadFromInput([
   { name: '철수', gender: 'M' },
   { name: '밥', gender: 'M' },
 ]);
-const numberOfMales = people.filter((p) => p instanceof Male).length;
+const numberOfMales = people.filter(p => p instanceof Male).length;
 console.log(numberOfMales);
+
+/*
+<불필요한 서브 클래스 제거하기>
+*/
