@@ -9,3 +9,7 @@ class Employee {
   get name() {}
   get id() {}
 }
+
+/*
+<슈퍼클래스 추출하기>
+*/
