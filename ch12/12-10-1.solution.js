@@ -40,7 +40,3 @@ class PremiumBooking extends Booking {
 
 const booking = new Booking(show, date);
 const premiumBooking = new PremiumBooking(show, date, extras);
-
-/*
-<위임, composition, 컴포지션!!! 포인트 정리!!!>
-*/
