@@ -68,3 +68,6 @@ class NorwegianBlueParrot extends Bird {
     return this._isNailed ? 0 : 10 + this._voltage / 10;
   }
 }
+/*
+<서브 클래스를 위임, 즉 컴포지션으로 바꾸기>
+*/
