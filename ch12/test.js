@@ -21,34 +21,7 @@ class Printer {
   }
 }
 
-class Sub extends Printer {
-  #location;
 
-  constructor(location) {
-    super(3, 'ttttt');
-    this.#location = location;
-  }
-  get location() {
-    return this.#location;
-  }
-
-  qwe() {
-    console.log(super.id);
-    console.log(this.id);
-    console.log(super.name);
-    console.log('ewq');
-  }
-}
-
-const printer = new Printer(1, 'asd');
-const sub = new Sub('서울');
-
-class Parent {
-  _name;
-  constructor(name) {
-    this._name = name;
-  }
-  get name() {
     return this._name;
   }
 }
